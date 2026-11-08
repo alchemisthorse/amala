@@ -39,6 +39,7 @@ modules:
         - kernel-modules
         - kernel-modules-core
         - kernel-modules-extra
+        - toolbox
 
   - type: default-flatpaks
     configurations:
@@ -52,6 +53,10 @@ modules:
           - com.mattjakeman.ExtensionManager
           - org.prismlauncher.PrismLauncher
           - com.brave.Browser
+          - io.github.DenysMb.Kontainer
+          - org.gnome.TextEditor
+          - io.github.radiolamp.mangojuice
+          
       - scope: user
 
   - type: signing
