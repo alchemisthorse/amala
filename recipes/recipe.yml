@@ -29,6 +29,8 @@ modules:
         - scx-tools
         - scx-manager
         - ananicy-cpp
+        - fastfetch
+        
     remove:
       packages:
         - firefox
@@ -40,7 +42,7 @@ modules:
         - kernel-modules-core
         - kernel-modules-extra
         - toolbox
-
+                                        
   - type: default-flatpaks
     configurations:
       - notify: true
