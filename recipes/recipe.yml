@@ -16,6 +16,7 @@ modules:
       copr:
         - bieszczaders/kernel-cachyos
         - bieszczaders/kernel-cachyos-addons
+        - scottames/ghostty
     install:
       packages:
         - steam
@@ -30,7 +31,7 @@ modules:
         - ananicy-cpp
         - fastfetch
         - distrobox
-        - kitty
+        - ghostty
     remove:
       packages:
         - firefox
