@@ -14,7 +14,6 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
         - bieszczaders/kernel-cachyos
         - bieszczaders/kernel-cachyos-addons
     install:
@@ -30,7 +29,8 @@ modules:
         - scx-manager
         - ananicy-cpp
         - fastfetch
-        
+        - distrobox
+        - kitty
     remove:
       packages:
         - firefox
@@ -41,8 +41,7 @@ modules:
         - kernel-modules
         - kernel-modules-core
         - kernel-modules-extra
-        - toolbox
-                                        
+        - toolbox                   
   - type: default-flatpaks
     configurations:
       - notify: true
