@@ -29,6 +29,7 @@ modules:
         - scx-tools
         - scx-manager
         - ananicy-cpp
+        - cachyos-ananicy-rules
         - fastfetch
         - distrobox
         - ghostty
@@ -58,6 +59,7 @@ modules:
           - io.github.DenysMb.Kontainer
           - org.gnome.TextEditor
           - io.github.radiolamp.mangojuice
+          - net.lutris.Lutris
           
       - scope: user
 
