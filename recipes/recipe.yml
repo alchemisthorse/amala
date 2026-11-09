@@ -60,6 +60,7 @@ modules:
           - org.gnome.TextEditor
           - io.github.radiolamp.mangojuice
           - net.lutris.Lutris
+          - com.github.tchx84.Flatseal
           
       - scope: user
 
