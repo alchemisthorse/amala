@@ -2,7 +2,7 @@ name: bluebuild
 on:
   schedule:
     - cron:
-        "30 10 * * *" # build at 06:00 UTC every day
+        "07 21 * * *" # 21:07 UTC = 00:07 Turkey time
         # (20 minutes after last ublue images start building)
   push:
     branches: [live]
