@@ -2,7 +2,7 @@
 name: amala
 description: Amala Network
 
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest
 
 modules:
@@ -16,7 +16,6 @@ modules:
       copr:
         - bieszczaders/kernel-cachyos
         - bieszczaders/kernel-cachyos-addons
-        - scottames/ghostty
     install:
       packages:
         - steam
@@ -32,7 +31,6 @@ modules:
         - cachyos-ananicy-rules
         - fastfetch
         - distrobox
-        - ghostty
     remove:
       packages:
         - firefox
@@ -50,18 +48,14 @@ modules:
         scope: system
         install:
           - org.mozilla.firefox
-          - org.gnome.Loupe
           - com.vysp3r.ProtonPlus
           - io.github.kolunmi.Bazaar
-          - com.mattjakeman.ExtensionManager
           - org.prismlauncher.PrismLauncher
           - com.brave.Browser
           - io.github.DenysMb.Kontainer
-          - org.gnome.TextEditor
           - io.github.radiolamp.mangojuice
           - net.lutris.Lutris
           - com.github.tchx84.Flatseal
-          
       - scope: user
 
   - type: signing
