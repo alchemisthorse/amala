@@ -44,12 +44,6 @@ modules:
         - kernel-modules-extra
         - toolbox
         - systemd-oomd-defaults
-  - type: script
-    snippets:
-      - dnf5 -y install --nogpgcheck --repofrompath "terra,https://repos.fyralabs.com/terra$(rpm -E %fedora)" terra-release terra-gpg-keys
-      - dnf5 -y install terra-release-mesa
-      - dnf5 -y distro-sync --repo=terra-mesa
-      
   - type: default-flatpaks
     configurations:
       - notify: true
