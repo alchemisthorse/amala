@@ -10,40 +10,21 @@ modules:
     files:
       - source: system
         destination: /
-
   - type: dnf
-    repos:
-      copr:
-        - bieszczaders/kernel-cachyos
-        - bieszczaders/kernel-cachyos-addons
     install:
       packages:
         - steam
         - mangohud
         - steam-devices
         - gamescope
-        - kernel-cachyos
-        - cachyos-settings
-        - scx-scheds
-        - scx-tools
-        - scx-manager
-        - ananicy-cpp
-        - cachyos-ananicy-rules
+        - gamemode
         - fastfetch
         - distrobox
-        - kitty
     remove:
       packages:
         - firefox
         - firefox-langpacks
-        - zram-generator-defaults
-        - kernel
-        - kernel-core
-        - kernel-modules
-        - kernel-modules-core
-        - kernel-modules-extra
         - toolbox
-        - systemd-oomd-defaults
   - type: default-flatpaks
     configurations:
       - notify: true
@@ -61,6 +42,4 @@ modules:
           - org.kde.gwenview
           - org.videolan.VLC
           - org.kde.okular
-      - scope: user
-
   - type: signing
