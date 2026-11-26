@@ -32,7 +32,6 @@ modules:
         install:
           - one.ablaze.floorp
           - com.vysp3r.ProtonPlus
-          - io.github.kolunmi.Bazaar
           - org.prismlauncher.PrismLauncher
           - com.brave.Browser
           - io.github.DenysMb.Kontainer
